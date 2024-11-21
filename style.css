@@ -1,0 +1,56 @@
+body{
+    background:rgb(250, 145, 145);
+}
+,
+*:before,
+*:after{
+   box-sizing:border-box;
+}
+html,body{
+   height:100%;
+   margin:0;
+   padding:0;
+   text-align:center;
+}
+
+#panel-1{
+   height:100%;
+   background: radial-gradient(circle, rgb(232, 244, 53) 0%, rgba(252,70,107,1) 100%);
+}
+#panel-2{
+   height:100%;
+   display:none;
+   background: radial-gradient(circle, rgb(152, 206, 233) 0%, rgba(131,133,190,1) 58%, rgba(31,48,116,1) 100%);;
+}
+button{
+   padding:10px;
+}
+button:hover{
+   cursor:pointer;
+}
+/*
+=================================================
+TYPOGRAPHY
+=================================================
+*/
+h1{
+    margin:0;
+    padding:150px 0 50px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size:54px;
+    color: rgb(53, 86, 26);
+    text-shadow: 2px 2px 4px #de0909;
+ }
+ p{
+  font-family: 'Roboto', sans-serif; 
+  font-size:18px;
+ }
+ h2{
+    margin:0;
+    padding:150px 0 50px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size:54px;
+    color: rgb(7, 16, 134);
+    text-shadow: 2px 2px 4px #810385;
+ }
+ 
