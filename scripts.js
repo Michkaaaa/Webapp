@@ -7,6 +7,3 @@ function show(){
     document.getElementById("panel-1").style.display = "block";
     document.getElementById("panel-2").style.display = "none";
  }
- 
- 
-

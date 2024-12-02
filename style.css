@@ -1,7 +1,6 @@
 body{
     background:rgb(250, 145, 145);
 }
-,
 *:before,
 *:after{
    box-sizing:border-box;
@@ -12,7 +11,6 @@ html,body{
    padding:0;
    text-align:center;
 }
-
 #panel-1{
    height:100%;
    background: radial-gradient(circle, rgb(232, 244, 53) 0%, rgba(252,70,107,1) 100%);
