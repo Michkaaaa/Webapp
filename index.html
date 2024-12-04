@@ -4,55 +4,40 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Web app</title>
-        <link rel="icon" type="image/png" href="favicon.png" />
-        <link rel="apple-touch-icon" href="favicon.png">
-        <meta name="apple-mobile-web-app-title" content="">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="scripts.js" async defer></script>
-    </body>
-</html>
-<body>
-
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web app</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <body>
 
         <!-- PANEL 1 -->
-        <div class="panel-1" id="panel-1">           
-         <h1>Color-1</h1>
-            <button onclick="show();">Color-2</button>
-        </div>
-   
+        <div class="panel-1" id="panel-1" style="display: none;">           
+            <h1>Color-1</h1>
+               <button onclick="show();">Color-2</button>
+         </div>    
         <!-- PANEL 2 -->
-        <div class="panel-2" id="panel-2">
+        <div class="panel-2" id="panel-2" style="display: block;">
             <h1>Color-2</h1>
             <button onclick="hide();">Color-1</button>
         </div>
+        
+        <button type="button" onclick="clicks++;updateClickCount();" id="push">UP</button>
+        <div id="clickCount">0</div>
+        <button type="button" onclick="clicks--;updateClickCount();" id="push">Down</button>
+        <script type="text/javascript">
+            var clicks = 0;
+            function updateClickCount() {
+                document.getElementById("clickCount").innerHTML = clicks;}
+        </script>
+   </body>
+ </html>
  
-    </body> 
-
-<button type="button" onClick="clicks++;updateClickCount();" id="push">UP</button>
-
-       <div id="clickCount">0</div>
-
-       <button type="button" onClick="clicks--;updateClickCount();" id="push">Down</button>
-
-       <script type="text/javascript">
-           var clicks = 0;
-           function updateClickCount() {
-               document.getElementById("clickCount").innerHTML = clicks;
-           }
-       </script>
-
+    
