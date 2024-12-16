@@ -19,25 +19,30 @@
     <body>
 
         <!-- PANEL 1 -->
-        <div class="panel-1" id="panel-1" style="display: none;">           
+        <div class="colol-1" id="color-2">           
             <h1>Color-1</h1>
                <button onclick="show();">Color-2</button>
          </div>    
         <!-- PANEL 2 -->
-        <div class="panel-2" id="panel-2" style="display: block;">
+        <div class="color-2" id="color-1">
             <h1>Color-2</h1>
-            <button onclick="hide();">Color-1</button>
+            <button onclick="show();">Color-1</button>
         </div>
-        
-        <button type="button" onclick="clicks++;updateClickCount();" id="push">UP</button>
-        <div id="clickCount">0</div>
-        <button type="button" onclick="clicks--;updateClickCount();" id="push">Down</button>
-        <script type="text/javascript">
-            var clicks = 0;
-            function updateClickCount() {
-                document.getElementById("clickCount").innerHTML = clicks;}
-        </script>
    </body>
  </html>
+ <button type="button" onClick="clicks++;updateClickCount();" id="push">UP</button>
+
+ <div id="clickCount">0</div>
+
+ <button type="button" onClick="clicks--;updateClickCount();" id="push">Down</button>
+
+ <script type="text/javascript">
+     var clicks = 0;
+     function updateClickCount() {
+         document.getElementById("clickCount").innerHTML = clicks;
+     }
+ </script>
+
+
  
     
